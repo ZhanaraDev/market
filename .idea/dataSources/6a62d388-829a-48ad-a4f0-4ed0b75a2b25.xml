@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - MyDatabaseForJava@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="MyDatabaseForJava">
+      <ObjectId>223251</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12373</ObjectId>
+    </database>
+    <database id="4" parent="1" name="eresources">
+      <ObjectId>211842</ObjectId>
+    </database>
+    <database id="5" parent="1" name="booksell_dev">
+      <ObjectId>222238</ObjectId>
+    </database>
+    <database id="6" parent="1" name="DbUtil">
+      <ObjectId>223239</ObjectId>
+    </database>
+    <schema id="7" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-12-10.01:41:35.105</IntrospectionTimestamp>
+      <IntrospectionStateNumber>30312</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="information_schema">
+      <ObjectId>12081</ObjectId>
+    </schema>
+    <sequence id="13" parent="7" name="admin_id_seq">
+      <ObjectId>223758</ObjectId>
+      <StateNumber>30160</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="14" parent="7" name="blog_id_seq">
+      <ObjectId>223266</ObjectId>
+      <StateNumber>29613</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="15" parent="7" name="blogs_id_seq">
+      <ObjectId>223381</ObjectId>
+      <StateNumber>29775</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="16" parent="7" name="blogusers_id_seq">
+      <ObjectId>223335</ObjectId>
+      <StateNumber>29715</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="17" parent="7" name="comments_id_seq">
+      <ObjectId>223397</ObjectId>
+      <StateNumber>29779</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="18" parent="7" name="crm_roles_id_seq">
+      <ObjectId>223418</ObjectId>
+      <StateNumber>29809</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="19" parent="7" name="crm_tasks_id_seq">
+      <ObjectId>223466</ObjectId>
+      <StateNumber>29836</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="20" parent="7" name="crm_users_id_seq">
+      <ObjectId>223429</ObjectId>
+      <StateNumber>29809</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="21" parent="7" name="educationhistory_id_seq">
+      <ObjectId>223642</ObjectId>
+      <StateNumber>30102</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="22" parent="7" name="faculty_id_seq">
+      <ObjectId>223594</ObjectId>
+      <StateNumber>30098</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="23" parent="7" name="lab7_blogs_id_seq">
+      <ObjectId>223575</ObjectId>
+      <StateNumber>30061</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="24" parent="7" name="lab7_users_id_seq">
+      <ObjectId>223564</ObjectId>
+      <StateNumber>30060</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="25" parent="7" name="market_cashier_id_seq">
+      <ObjectId>231988</ObjectId>
+      <StateNumber>30303</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="26" parent="7" name="market_items_id_seq">
+      <ObjectId>231980</ObjectId>
+      <StateNumber>30302</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="27" parent="7" name="market_roles_id_seq">
+      <ObjectId>231959</ObjectId>
+      <StateNumber>30301</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="28" parent="7" name="market_transaction_history_id_seq">
+      <ObjectId>232001</ObjectId>
+      <StateNumber>30303</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="29" parent="7" name="market_users_id_seq">
+      <ObjectId>231967</ObjectId>
+      <StateNumber>30302</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="30" parent="7" name="shop_id_seq">
+      <ObjectId>223303</ObjectId>
+      <StateNumber>29693</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="31" parent="7" name="specialty_id_seq">
+      <ObjectId>223605</ObjectId>
+      <StateNumber>30099</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="32" parent="7" name="student_id_seq">
+      <ObjectId>223623</ObjectId>
+      <StateNumber>30101</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="33" parent="7" name="uniuser_id_seq">
+      <ObjectId>223290</ObjectId>
+      <StateNumber>29644</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="34" parent="7" name="universaluser_id_seq">
+      <ObjectId>223704</ObjectId>
+      <StateNumber>30143</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="35" parent="7" name="university_id_seq">
+      <ObjectId>223279</ObjectId>
+      <StateNumber>29627</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="36" parent="7" name="users_id_seq">
+      <ObjectId>223252</ObjectId>
+      <StateNumber>28787</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="37" parent="7" name="admin">
+      <ObjectId>223760</ObjectId>
+      <StateNumber>30163</StateNumber>
+    </table>
+    <table id="38" parent="7" name="blog">
+      <ObjectId>223268</ObjectId>
+      <StateNumber>29613</StateNumber>
+    </table>
+    <table id="39" parent="7" name="blogs">
+      <ObjectId>223383</ObjectId>
+      <StateNumber>29779</StateNumber>
+    </table>
+    <table id="40" parent="7" name="blogusers">
+      <ObjectId>223337</ObjectId>
+      <StateNumber>29779</StateNumber>
+    </table>
+    <table id="41" parent="7" name="comments">
+      <ObjectId>223399</ObjectId>
+      <StateNumber>29781</StateNumber>
+    </table>
+    <table id="42" parent="7" name="crm_roles">
+      <ObjectId>223420</ObjectId>
+      <StateNumber>29809</StateNumber>
+    </table>
+    <table id="43" parent="7" name="crm_tasks">
+      <ObjectId>223468</ObjectId>
+      <StateNumber>29836</StateNumber>
+    </table>
+    <table id="44" parent="7" name="crm_users">
+      <ObjectId>223431</ObjectId>
+      <StateNumber>29836</StateNumber>
+    </table>
+    <table id="45" parent="7" name="educationhistory">
+      <ObjectId>223644</ObjectId>
+      <StateNumber>30102</StateNumber>
+    </table>
+    <table id="46" parent="7" name="faculty">
+      <ObjectId>223596</ObjectId>
+      <StateNumber>30099</StateNumber>
+    </table>
+    <table id="47" parent="7" name="lab7_blogs">
+      <ObjectId>223577</ObjectId>
+      <StateNumber>30061</StateNumber>
+    </table>
+    <table id="48" parent="7" name="lab7_users">
+      <ObjectId>223566</ObjectId>
+      <StateNumber>30061</StateNumber>
+    </table>
+    <table id="49" parent="7" name="market_cashier">
+      <ObjectId>231990</ObjectId>
+      <StateNumber>30303</StateNumber>
+    </table>
+    <table id="50" parent="7" name="market_items">
+      <ObjectId>231982</ObjectId>
+      <StateNumber>30311</StateNumber>
+    </table>
+    <table id="51" parent="7" name="market_roles">
+      <ObjectId>231961</ObjectId>
+      <StateNumber>30302</StateNumber>
+    </table>
+    <table id="52" parent="7" name="market_transaction_history">
+      <ObjectId>232003</ObjectId>
+      <StateNumber>30303</StateNumber>
+    </table>
+    <table id="53" parent="7" name="market_users">
+      <ObjectId>231969</ObjectId>
+      <StateNumber>30303</StateNumber>
+    </table>
+    <table id="54" parent="7" name="shop">
+      <ObjectId>223305</ObjectId>
+      <StateNumber>29693</StateNumber>
+    </table>
+    <table id="55" parent="7" name="specialty">
+      <ObjectId>223607</ObjectId>
+      <StateNumber>30101</StateNumber>
+    </table>
+    <table id="56" parent="7" name="student">
+      <ObjectId>223625</ObjectId>
+      <StateNumber>30165</StateNumber>
+    </table>
+    <table id="57" parent="7" name="test">
+      <ObjectId>232019</ObjectId>
+      <StateNumber>30305</StateNumber>
+    </table>
+    <table id="58" parent="7" name="uniuser">
+      <ObjectId>223292</ObjectId>
+      <StateNumber>29644</StateNumber>
+    </table>
+    <table id="59" parent="7" name="universaluser">
+      <ObjectId>223706</ObjectId>
+      <StateNumber>30190</StateNumber>
+    </table>
+    <table id="60" parent="7" name="university">
+      <ObjectId>223281</ObjectId>
+      <StateNumber>29627</StateNumber>
+    </table>
+    <table id="61" parent="7" name="users">
+      <ObjectId>223254</ObjectId>
+      <StateNumber>28787</StateNumber>
+    </table>
+    <table id="62" parent="7" name="yolo">
+      <ObjectId>232032</ObjectId>
+      <StateNumber>30312</StateNumber>
+    </table>
+    <column id="63" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30160</StateNumber>
+      <SequenceName>admin_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;admin_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="64" parent="37" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30160</StateNumber>
+    </column>
+    <column id="65" parent="37" name="surname">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30160</StateNumber>
+    </column>
+    <column id="66" parent="37" name="userid">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30161</StateNumber>
+    </column>
+    <index id="67" parent="37" name="admin_pkey">
+      <ObjectId>223767</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="68" parent="37" name="admin_pkey">
+      <ObjectId>223768</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>admin_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="69" parent="37" name="fk_userid">
+      <ObjectId>223770</ObjectId>
+      <ColNames>userid</ColNames>
+      <RefTableId>223706</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>universaluser</RefTableName>
+      <RefKeyName>universaluser_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="70" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29613</StateNumber>
+      <SequenceName>blog_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;blog_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="71" parent="38" name="title">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29613</StateNumber>
+    </column>
+    <column id="72" parent="38" name="content">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29613</StateNumber>
+    </column>
+    <column id="73" parent="38" name="post_date">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>29613</StateNumber>
+    </column>
+    <index id="74" parent="38" name="blog_pkey">
+      <ObjectId>223275</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="75" parent="38" name="blog_pkey">
+      <ObjectId>223276</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>blog_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29775</StateNumber>
+      <SequenceName>blogs_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;blogs_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="77" parent="39" name="title">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29775</StateNumber>
+    </column>
+    <column id="78" parent="39" name="content">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29775</StateNumber>
+    </column>
+    <column id="79" parent="39" name="post_date">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>29775</StateNumber>
+    </column>
+    <column id="80" parent="39" name="active">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29775</StateNumber>
+    </column>
+    <column id="81" parent="39" name="user_id">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29775</StateNumber>
+    </column>
+    <index id="82" parent="39" name="blogs_pkey">
+      <ObjectId>223390</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="83" parent="39" name="blogs_pkey">
+      <ObjectId>223391</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>blogs_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="84" parent="39" name="blogs_user_id_fkey">
+      <ObjectId>223392</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>223337</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>blogusers</RefTableName>
+      <RefKeyName>blogusers_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="85" parent="40" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29715</StateNumber>
+      <SequenceName>blogusers_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;blogusers_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="86" parent="40" name="email">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29715</StateNumber>
+    </column>
+    <column id="87" parent="40" name="name">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29715</StateNumber>
+    </column>
+    <column id="88" parent="40" name="surname">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29715</StateNumber>
+    </column>
+    <column id="89" parent="40" name="password">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29716</StateNumber>
+    </column>
+    <index id="90" parent="40" name="blogusers_pkey">
+      <ObjectId>223344</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="91" parent="40" name="blogusers_pkey">
+      <ObjectId>223345</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>blogusers_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="92" parent="41" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29779</StateNumber>
+      <SequenceName>comments_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;comments_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="93" parent="41" name="post_date">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>29779</StateNumber>
+    </column>
+    <column id="94" parent="41" name="active">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29779</StateNumber>
+    </column>
+    <column id="95" parent="41" name="blog_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29779</StateNumber>
+    </column>
+    <column id="96" parent="41" name="user_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29779</StateNumber>
+    </column>
+    <column id="97" parent="41" name="comment">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29781</StateNumber>
+    </column>
+    <index id="98" parent="41" name="comments_pkey">
+      <ObjectId>223403</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="99" parent="41" name="comments_pkey">
+      <ObjectId>223404</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>comments_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="100" parent="41" name="comments_blog_id_fkey">
+      <ObjectId>223405</ObjectId>
+      <ColNames>blog_id</ColNames>
+      <RefTableId>223383</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>blogs</RefTableName>
+      <RefKeyName>blogs_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="101" parent="41" name="comments_user_id_fkey">
+      <ObjectId>223410</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>223337</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>blogusers</RefTableName>
+      <RefKeyName>blogusers_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="102" parent="42" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29809</StateNumber>
+      <SequenceName>crm_roles_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;crm_roles_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="103" parent="42" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <index id="104" parent="42" name="crm_roles_pkey">
+      <ObjectId>223427</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="105" parent="42" name="crm_roles_pkey">
+      <ObjectId>223428</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>crm_roles_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="106" parent="43" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29836</StateNumber>
+      <SequenceName>crm_tasks_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;crm_tasks_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="107" parent="43" name="user_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29836</StateNumber>
+    </column>
+    <column id="108" parent="43" name="title">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29836</StateNumber>
+    </column>
+    <column id="109" parent="43" name="description">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29836</StateNumber>
+    </column>
+    <column id="110" parent="43" name="deadline_date">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29836</StateNumber>
+    </column>
+    <column id="111" parent="43" name="state">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29836</StateNumber>
+    </column>
+    <index id="112" parent="43" name="crm_tasks_pkey">
+      <ObjectId>223475</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="113" parent="43" name="crm_tasks_pkey">
+      <ObjectId>223476</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>crm_tasks_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="114" parent="43" name="crm_tasks_user_id_fkey">
+      <ObjectId>223477</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>223431</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>crm_users</RefTableName>
+      <RefKeyName>crm_users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="115" parent="44" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29809</StateNumber>
+      <SequenceName>crm_users_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;crm_users_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="116" parent="44" name="login">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <column id="117" parent="44" name="password">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <column id="118" parent="44" name="role_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <column id="119" parent="44" name="name">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <column id="120" parent="44" name="surname">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <column id="121" parent="44" name="active">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29809</StateNumber>
+    </column>
+    <index id="122" parent="44" name="crm_users_pkey">
+      <ObjectId>223438</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="123" parent="44" name="crm_users_pkey">
+      <ObjectId>223439</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>crm_users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="124" parent="44" name="crm_users_role_id_fkey">
+      <ObjectId>223440</ObjectId>
+      <ColNames>role_id</ColNames>
+      <RefTableId>223420</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>crm_roles</RefTableName>
+      <RefKeyName>crm_roles_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="125" parent="45" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30102</StateNumber>
+      <SequenceName>educationhistory_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;educationhistory_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="126" parent="45" name="educationplacename">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30102</StateNumber>
+    </column>
+    <column id="127" parent="45" name="duringtime">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30102</StateNumber>
+    </column>
+    <column id="128" parent="45" name="address">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30102</StateNumber>
+    </column>
+    <column id="129" parent="45" name="studentid">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30102</StateNumber>
+    </column>
+    <index id="130" parent="45" name="educationhistory_pkey">
+      <ObjectId>223651</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="131" parent="45" name="educationhistory_pkey">
+      <ObjectId>223652</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>educationhistory_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="132" parent="45" name="educationhistory_studentid_fkey">
+      <ObjectId>223653</ObjectId>
+      <ColNames>studentid</ColNames>
+      <RefTableId>223625</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>student</RefTableName>
+      <RefKeyName>student_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="133" parent="46" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30098</StateNumber>
+      <SequenceName>faculty_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;faculty_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="134" parent="46" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30098</StateNumber>
+    </column>
+    <index id="135" parent="46" name="faculty_pkey">
+      <ObjectId>223603</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="136" parent="46" name="faculty_pkey">
+      <ObjectId>223604</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>faculty_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="137" parent="47" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30061</StateNumber>
+      <SequenceName>lab7_blogs_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;lab7_blogs_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="138" parent="47" name="title">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30061</StateNumber>
+    </column>
+    <column id="139" parent="47" name="content">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30061</StateNumber>
+    </column>
+    <column id="140" parent="47" name="post_date">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30061</StateNumber>
+    </column>
+    <column id="141" parent="47" name="user_id">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30061</StateNumber>
+    </column>
+    <index id="142" parent="47" name="lab7_blogs_pkey">
+      <ObjectId>223584</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="143" parent="47" name="lab7_blogs_pkey">
+      <ObjectId>223585</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>lab7_blogs_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="144" parent="47" name="lab7_blogs_user_id_fkey">
+      <ObjectId>223586</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>223566</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>lab7_users</RefTableName>
+      <RefKeyName>lab7_users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="145" parent="48" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30060</StateNumber>
+      <SequenceName>lab7_users_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;lab7_users_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="146" parent="48" name="email">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30060</StateNumber>
+    </column>
+    <column id="147" parent="48" name="password">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30060</StateNumber>
+    </column>
+    <column id="148" parent="48" name="name">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30060</StateNumber>
+    </column>
+    <column id="149" parent="48" name="surname">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30060</StateNumber>
+    </column>
+    <column id="150" parent="48" name="active">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30060</StateNumber>
+    </column>
+    <index id="151" parent="48" name="lab7_users_pkey">
+      <ObjectId>223573</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="152" parent="48" name="lab7_users_pkey">
+      <ObjectId>223574</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>lab7_users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="153" parent="49" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30303</StateNumber>
+      <SequenceName>market_cashier_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;market_cashier_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="154" parent="49" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30303</StateNumber>
+    </column>
+    <column id="155" parent="49" name="surname">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30303</StateNumber>
+    </column>
+    <column id="156" parent="49" name="user_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30303</StateNumber>
+    </column>
+    <index id="157" parent="49" name="market_cashier_pkey">
+      <ObjectId>231994</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="158" parent="49" name="market_cashier_pkey">
+      <ObjectId>231995</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>market_cashier_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="159" parent="49" name="market_cashier_user_id_fkey">
+      <ObjectId>231996</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>231969</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>market_users</RefTableName>
+      <RefKeyName>market_users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="160" parent="50" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30302</StateNumber>
+      <SequenceName>market_items_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;market_items_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="161" parent="50" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30302</StateNumber>
+    </column>
+    <column id="162" parent="50" name="universal_product_code">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30302</StateNumber>
+    </column>
+    <column id="163" parent="50" name="amounts">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30307</StateNumber>
+    </column>
+    <column id="164" parent="50" name="price">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30311</StateNumber>
+    </column>
+    <index id="165" parent="50" name="market_items_pkey">
+      <ObjectId>231986</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="166" parent="50" name="market_items_pkey">
+      <ObjectId>231987</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>market_items_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="167" parent="51" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30301</StateNumber>
+      <SequenceName>market_roles_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;market_roles_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="168" parent="51" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30301</StateNumber>
+    </column>
+    <index id="169" parent="51" name="market_roles_pkey">
+      <ObjectId>231965</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="170" parent="51" name="market_roles_pkey">
+      <ObjectId>231966</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>market_roles_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="171" parent="52" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30303</StateNumber>
+      <SequenceName>market_transaction_history_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;market_transaction_history_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="172" parent="52" name="item_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30303</StateNumber>
+    </column>
+    <column id="173" parent="52" name="cashier_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30303</StateNumber>
+    </column>
+    <column id="174" parent="52" name="amount">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30309</StateNumber>
+    </column>
+    <column id="175" parent="52" name="transaction_time">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>30303</StateNumber>
+    </column>
+    <index id="176" parent="52" name="market_transaction_history_pkey">
+      <ObjectId>232007</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="177" parent="52" name="market_transaction_history_pkey">
+      <ObjectId>232008</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>market_transaction_history_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="178" parent="52" name="market_transaction_history_item_id_fkey">
+      <ObjectId>232009</ObjectId>
+      <ColNames>item_id</ColNames>
+      <RefTableId>231982</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>market_items</RefTableName>
+      <RefKeyName>market_items_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="179" parent="52" name="market_transaction_history_cashier_id_fkey">
+      <ObjectId>232014</ObjectId>
+      <ColNames>cashier_id</ColNames>
+      <RefTableId>231990</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>market_cashier</RefTableName>
+      <RefKeyName>market_cashier_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="180" parent="53" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30302</StateNumber>
+      <SequenceName>market_users_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;market_users_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="181" parent="53" name="login">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30302</StateNumber>
+    </column>
+    <column id="182" parent="53" name="password">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>30302</StateNumber>
+    </column>
+    <column id="183" parent="53" name="role_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30302</StateNumber>
+    </column>
+    <index id="184" parent="53" name="market_users_pkey">
+      <ObjectId>231973</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="185" parent="53" name="market_users_pkey">
+      <ObjectId>231974</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>market_users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="186" parent="53" name="market_users_role_id_fkey">
+      <ObjectId>231975</ObjectId>
+      <ColNames>role_id</ColNames>
+      <RefTableId>231961</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>market_roles</RefTableName>
+      <RefKeyName>market_roles_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="187" parent="54" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29693</StateNumber>
+      <SequenceName>shop_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;shop_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="188" parent="54" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29693</StateNumber>
+    </column>
+    <column id="189" parent="54" name="price">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29693</StateNumber>
+    </column>
+    <column id="190" parent="55" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30099</StateNumber>
+      <SequenceName>specialty_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;specialty_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="191" parent="55" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30099</StateNumber>
+    </column>
+    <column id="192" parent="55" name="facultyid">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30099</StateNumber>
+    </column>
+    <index id="193" parent="55" name="specialty_pkey">
+      <ObjectId>223614</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="194" parent="55" name="specialty_pkey">
+      <ObjectId>223615</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>specialty_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="195" parent="55" name="specialty_facultyid_fkey">
+      <ObjectId>223616</ObjectId>
+      <ColNames>facultyid</ColNames>
+      <RefTableId>223596</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>faculty</RefTableName>
+      <RefKeyName>faculty_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="196" parent="56" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30101</StateNumber>
+      <SequenceName>student_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;student_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="197" parent="56" name="sprecialtyid">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="198" parent="56" name="firstname">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="199" parent="56" name="lastname">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="200" parent="56" name="entryyear">
+      <Position>5</Position>
+      <DataType>varchar(4)|0</DataType>
+      <StateNumber>30101</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+    </column>
+    <column id="201" parent="56" name="edulevel">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="202" parent="56" name="paymenttype">
+      <Position>7</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="203" parent="56" name="gender">
+      <Position>8</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="204" parent="56" name="telephone1">
+      <Position>10</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="205" parent="56" name="telephone2">
+      <Position>11</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="206" parent="56" name="email1">
+      <Position>12</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="207" parent="56" name="email2">
+      <Position>13</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="208" parent="56" name="address">
+      <Position>14</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="209" parent="56" name="nationality">
+      <Position>15</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="210" parent="56" name="doctype">
+      <Position>16</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="211" parent="56" name="docnumber">
+      <Position>17</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="212" parent="56" name="docissueorganization">
+      <Position>19</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="213" parent="56" name="fathername">
+      <Position>20</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="214" parent="56" name="fatherworkingplace">
+      <Position>21</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="215" parent="56" name="fathermobilephone">
+      <Position>22</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="216" parent="56" name="fatherhomephone">
+      <Position>23</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="217" parent="56" name="fatheremail">
+      <Position>24</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="218" parent="56" name="fatheraddress">
+      <Position>25</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="219" parent="56" name="mothername">
+      <Position>26</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="220" parent="56" name="motherworkingplace">
+      <Position>27</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="221" parent="56" name="mothermobilephone">
+      <Position>28</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="222" parent="56" name="motherhomephone">
+      <Position>29</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="223" parent="56" name="motheremail">
+      <Position>30</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="224" parent="56" name="motheraddress">
+      <Position>31</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="225" parent="56" name="imagepath">
+      <Position>32</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="226" parent="56" name="studentid">
+      <Position>33</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30101</StateNumber>
+    </column>
+    <column id="227" parent="56" name="birthday">
+      <Position>34</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30119</StateNumber>
+    </column>
+    <column id="228" parent="56" name="docexpirationdate">
+      <Position>35</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30121</StateNumber>
+    </column>
+    <column id="229" parent="56" name="userid">
+      <Position>36</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30164</StateNumber>
+    </column>
+    <index id="230" parent="56" name="student_pkey">
+      <ObjectId>223633</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="231" parent="56" name="student_studentid_key">
+      <ObjectId>223635</ObjectId>
+      <ColNames>studentid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="232" parent="56" name="student_pkey">
+      <ObjectId>223634</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="233" parent="56" name="student_studentid_key">
+      <ObjectId>223636</ObjectId>
+      <ColNames>studentid</ColNames>
+      <UnderlyingIndexName>student_studentid_key</UnderlyingIndexName>
+    </key>
+    <foreign-key id="234" parent="56" name="student_sprecialtyid_fkey">
+      <ObjectId>223637</ObjectId>
+      <ColNames>sprecialtyid</ColNames>
+      <RefTableId>223607</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>specialty</RefTableName>
+      <RefKeyName>specialty_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="235" parent="56" name="fk_userid">
+      <ObjectId>223775</ObjectId>
+      <ColNames>userid</ColNames>
+      <RefTableId>223706</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>universaluser</RefTableName>
+      <RefKeyName>universaluser_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="236" parent="57" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30305</StateNumber>
+    </column>
+    <column id="237" parent="58" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29644</StateNumber>
+      <SequenceName>uniuser_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;uniuser_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="238" parent="58" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29644</StateNumber>
+    </column>
+    <column id="239" parent="58" name="surname">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29644</StateNumber>
+    </column>
+    <column id="240" parent="58" name="age">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>29644</StateNumber>
+    </column>
+    <column id="241" parent="58" name="uni_name">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29644</StateNumber>
+    </column>
+    <index id="242" parent="58" name="uniuser_pkey">
+      <ObjectId>223299</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="243" parent="58" name="uniuser_pkey">
+      <ObjectId>223300</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>uniuser_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="244" parent="59" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>30143</StateNumber>
+      <SequenceName>universaluser_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;universaluser_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="245" parent="59" name="login">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30189</StateNumber>
+    </column>
+    <column id="246" parent="59" name="password">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30143</StateNumber>
+    </column>
+    <column id="247" parent="59" name="role">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30190</StateNumber>
+    </column>
+    <index id="248" parent="59" name="universaluser_pkey">
+      <ObjectId>223713</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="249" parent="59" name="universaluser_pkey">
+      <ObjectId>223714</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>universaluser_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="250" parent="60" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>29627</StateNumber>
+      <SequenceName>university_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;university_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="251" parent="60" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>29627</StateNumber>
+    </column>
+    <index id="252" parent="60" name="university_pkey">
+      <ObjectId>223288</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="253" parent="60" name="university_pkey">
+      <ObjectId>223289</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>university_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="254" parent="61" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>28787</StateNumber>
+      <SequenceName>users_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="255" parent="61" name="user_name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>28787</StateNumber>
+    </column>
+    <column id="256" parent="61" name="password">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>28787</StateNumber>
+    </column>
+    <column id="257" parent="61" name="userfullname">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>28787</StateNumber>
+    </column>
+    <column id="258" parent="61" name="age">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>28787</StateNumber>
+    </column>
+    <index id="259" parent="61" name="users_pkey">
+      <ObjectId>223261</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="260" parent="61" name="users_pkey">
+      <ObjectId>223262</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="261" parent="62" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>30312</StateNumber>
+    </column>
+    <column id="262" parent="62" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>30312</StateNumber>
+    </column>
+  </database-model>
+</dataSource>
